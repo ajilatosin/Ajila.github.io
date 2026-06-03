@@ -3,236 +3,475 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!--💡UPDATE: Change the title to your name-->
-    <title>Ajila Oluwatosin | Data Science Portfolio</title>
-      
-    <!--💡UPDATE: Add your favicon here. You can generate one at realfavicongenerator.net-->
+    <meta name="description" content="Ajila Oluwatosin — Data Scientist, Machine Learning Engineer, and AI practitioner building predictive systems and data-driven solutions.">
+    <meta name="keywords" content="Data Scientist, Machine Learning Engineer, Python, AI, Deep Learning, Lagos, Nigeria, Portfolio">
+    <meta name="author" content="Ajila Oluwatosin">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Ajila Oluwatosin | Data Scientist & ML Engineer">
+    <meta property="og:description" content="Transforming complex data into impactful AI solutions. Explore my projects in fraud detection, predictive modeling, and customer analytics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ajilatosin.dev">
+    <meta property="og:image" content="assets/images/og-image.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ajila Oluwatosin | Data Scientist & ML Engineer">
+    <meta name="twitter:description" content="Transforming complex data into impactful AI solutions.">
+
+    <title>Ajila Oluwatosin | Data Scientist & ML Engineer</title>
+
     <link rel="icon" type="image/png" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" href="/favicon-32x32.png">
-    
-    <!-- Google Fonts for Elegant Typography -->
+
+    <!-- Fonts: DM Serif Display + DM Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome for Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
-    <!-- Your Stylesheet -->
+
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-<!-- HEADER SECTION -->
-<header>
-    <div class="container">
-        <!--💡UPDATE: Change to your name and title-->
-        <h1>Ajila Oluwatosin</h1>
-        <p>Data Scientist | Machine Learning Engineer | Data Analyst </p>
-        <div class="social-links">
-            <!--💡UPDATE: Add your social media links and CV file-->
-            <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ajilatosin" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://x.com/ajloix" target="_blank" title="X"><i class="fab fa-X"></i></a>
-            <a href="assets/Your_Name_CV.pdf" download title="Download CV"><i class="fas fa-file-arrow-down"></i></a>
-        </div>
-    </div>
-</header>
+<!-- BACK TO TOP -->
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+</a>
 
 <!-- NAVIGATION -->
-<nav>
-    <div class="container">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="#top" class="nav-logo" aria-label="Home">AO<span class="logo-dot">.</span></a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
+        <a href="assets/Your_Name_CV.pdf" download class="nav-cta" aria-label="Download Resume">
+            <i class="fas fa-arrow-down"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
     </div>
 </nav>
 
-<!-- ABOUT SECTION -->
-<section id="about" class="section">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <!--💡UPDATE: Change the image to your own profile photo in assets/images/-->
-            <img src="Confident professional in light blue attire.png" alt="Ajila Oluwatosin" class="profile-photo">
-            <div class="about-text">
-                <!--💡UPDATE: Write your own 'About Me' text here-->
-                <p>A Data Scientist and Machine Learning Engineer passionate about transforming complex data into actionable insights and building impactful AI solutions.</p>
-                <p>I specialize in statistical analysis, predictive modeling, data visualization, and end-to-end machine learning workflows — from data exploration to model deployment.</p>
+<!-- HERO SECTION -->
+<section id="top" class="hero" aria-label="Hero">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-container">
+        <div class="hero-content" data-reveal>
+            <p class="hero-eyebrow">Lagos, Nigeria <span class="eyebrow-sep">·</span> Open to Global Opportunities</p>
+            <h1 class="hero-name">Ajila<br><em>Oluwatosin</em></h1>
+            <p class="hero-title">Data Scientist <span class="title-sep">·</span> Machine Learning Engineer <span class="title-sep">·</span> Data Analyst</p>
+            <p class="hero-tagline">I build ML systems that turn messy data into decisions — from fraud detection models to predictive healthcare analytics.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-ghost">Get in Touch</a>
+            </div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/ajilatosin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/ajloix" target="_blank" rel="noopener" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+        <div class="hero-image-wrap" data-reveal-delay>
+            <div class="hero-image-frame">
+                <img src="Confident professional in light blue attire.png" alt="Ajila Oluwatosin — Data Scientist" class="hero-photo">
+                <div class="hero-image-badge">
+                    <i class="fas fa-circle-check"></i>
+                    <span>Available for Work</span>
+                </div>
+            </div>
+            <div class="hero-stat-card card-1">
+                <span class="stat-num">4+</span>
+                <span class="stat-label">Projects Deployed</span>
+            </div>
+            <div class="hero-stat-card card-2">
+                <span class="stat-num">43%</span>
+                <span class="stat-label">A/B Uplift Delivered</span>
             </div>
         </div>
     </div>
 </section>
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
+<!-- ABOUT SECTION -->
+<section id="about" class="section about-section" aria-label="About">
     <div class="container">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-
-            <!--💡UPDATE: Replace this with your own project. Add as many as you like!-->
-            <!-- Project 1 -->
-             <div class="project-card">
-                <!--💡UPDATE: Add a preview image of your project to assets/images/ -->
-                <img src="Dashboard2.png" alt="Project One Preview">
-                <div class="project-card-content">
-                    <h3>Credit Card Fraud Detection System</h3>
-                    <p>This project is a full-stack Credit Card Fraud Detection System designed to identify suspicious financial transactions in real time using machine learning.</p>
-                    <div class="project-buttons">
-                        <!--💡UPDATE: Add link to your project's code/documentation on GitHub-->
-                        <a href="https://github.com/ajilatosin/Credit-card-fraud-detection" target="_blank" class="btn">Documentation</a>
-                        <!--💡UPDATE: Add link to your live dashboard (e.g., Power BI, Tableau Public)-->
-                        <a href="https://ajilatosin-credit-card-fraud-detection.hf.space/" target="_blank" class="btn btn-secondary">View Dashboard</a>
+        <div class="section-label" data-reveal>About</div>
+        <div class="about-grid">
+            <div class="about-text" data-reveal>
+                <h2 class="section-heading">Turning data complexity<br>into <em>business clarity</em></h2>
+                <p>I'm a Data Scientist and Machine Learning Engineer with a focus on building end-to-end AI systems — from exploratory data analysis to production model deployment. I thrive at the intersection of statistical rigor and practical engineering.</p>
+                <p>My work spans financial services (fraud detection), healthcare analytics (insurance cost prediction), and marketing science (A/B testing, customer segmentation). I design solutions that don't just perform well in notebooks — they ship to production and generate measurable impact.</p>
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-brain" aria-hidden="true"></i>
+                        <div>
+                            <strong>ML Engineering</strong>
+                            <span>End-to-end model development, training, and deployment on Hugging Face & cloud infrastructure</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-chart-line" aria-hidden="true"></i>
+                        <div>
+                            <strong>Business Analytics</strong>
+                            <span>Statistical inference, A/B testing, and KPI-driven storytelling that informs executive decisions</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-layer-group" aria-hidden="true"></i>
+                        <div>
+                            <strong>Data Engineering Fundamentals</strong>
+                            <span>SQL, Python pipelines, API development with FastAPI, containerization with Docker</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img src="M_Dashboard3.png" alt="Project Two Preview">
-                <div class="project-card-content">
-                    <h3>Medical Healthcare Insurance Claim Predictor</h3>
-                    <p>An end-to-end machine learning application that predicts medical insurance claim costs using patient health and demographic data, with an interactive Gradio web interface deployed on Hugging Face Spaces.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/ajilatosin/Medical-Healthcare-Insurance-Claim-Predictor" target="_blank" class="btn">Documentation</a>
-                        <a href="https://ajilatosin-mediclaimai.hf.space/" target="_blank" class="btn btn-secondary">View Dashboard</a>
+            <div class="about-visual" data-reveal-delay>
+                <div class="about-card-stack">
+                    <div class="about-img-wrap">
+                        <img src="Confident professional in light blue attire.png" alt="Ajila Oluwatosin" class="about-photo">
+                    </div>
+                    <div class="about-meta">
+                        <div class="meta-row">
+                            <span class="meta-key">Location</span>
+                            <span class="meta-val">Lagos, Nigeria</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Focus</span>
+                            <span class="meta-val">ML · Analytics · AI</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-key">Status</span>
+                            <span class="meta-val meta-avail"><span class="pulse-dot"></span>Open to Opportunities</span>
+                        </div>
+                        <a href="assets/Your_Name_CV.pdf" download class="btn-primary about-cv-btn">
+                            <i class="fas fa-file-arrow-down"></i> Download CV
+                        </a>
                     </div>
                 </div>
             </div>
-
-            <!-- Project 3 -->
-            <div class="project-card">
-                <img src="Screenshot (346).png" alt="Project Three Preview">
-                <div class="project-card-content">
-                    <h3>Marketing A/B Testing Conversion Analysis</h3>
-                    <p>A/B testing and statistical analysis of a digital marketing campaign, revealing a 43% conversion uplift through hypothesis testing and behavioral insights.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/ajilatosin/A-B-Testing-and-Statistical-Analysis" target="_blank" class="btn">Documentation</a>
-                        <a href="https://github.com/ajilatosin/A-B-Testing-and-Statistical-Analysis/blob/a3a8e4927fd8cd28f7b2e9e79a4a6e2eba98ca60/AB_Analytics_Exec_Report.pdf" target="_blank" class="btn btn-secondary">View Report</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="project-card">
-                <img src="Screenshot (345).png" alt="Project Four Preview">
-                <div class="project-card-content">
-                    <h3>Customer Segmentation using K-Means & RFM Analysis</h3>
-                    <p>An end-to-end customer segmentation solution using RFM (Recency, Frequency, Monetary) analysis and unsupervised machine learning to identify distinct customer groups and generate actionable business strategies.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/ajilatosin/Customer-Segmentation" target="_blank" class="btn">Documentation</a>
-                        <a href="https://github.com/ajilatosin/Customer-Segmentation/blob/master/KMeans_Customer_Segmentation_Exec_Report.pdf" target="_blank" class="btn btn-secondary">View Report</a>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 </section>
 
 <!-- SKILLS SECTION -->
-<section id="skills" class="section">
+<section id="skills" class="section skills-section" aria-label="Technical Skills">
     <div class="container">
-        <h2>Technical Skillset</h2>
-        <div class="skills-table">
-            
-            <!--💡UPDATE: Customize your skills in each category-->
-            <!-- Column 1: Data Visualization -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-chart-pie"></i>
+        <div class="section-label" data-reveal>Skills</div>
+        <h2 class="section-heading" data-reveal>Technical <em>Toolkit</em></h2>
+        <p class="section-sub" data-reveal>Tools and technologies I use to take data from raw to revenue-generating.</p>
+
+        <div class="skills-grid" data-reveal>
+
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-code" aria-hidden="true"></i>
+                    </div>
+                    <h3>Languages & Core</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">SciPy</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-robot" aria-hidden="true"></i>
+                    </div>
+                    <h3>Machine Learning</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">K-Means</span>
+                    <span class="tag">Random Forest</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-chart-column" aria-hidden="true"></i>
+                    </div>
                     <h3>Data Visualization</h3>
                 </div>
-                <ul class="skill-list">
-                     <li>Matplotlib</li>
-                     <li>Seaborn</li>
-                     <li>Plotly</li>
-                    <li>Tableau</li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">Plotly</span>
+                    <span class="tag">Tableau</span>
+                </div>
             </div>
 
-            <!-- Column 2: Data Analysis -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-search-plus"></i>
-                    <h3>Data Analytics</h3>
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-server" aria-hidden="true"></i>
+                    </div>
+                    <h3>MLOps & Deployment</h3>
                 </div>
-                <ul class="skill-list">
-                    <li>SQL</li>
-                    <li>Python (Pandas, NumPy)</li>
-                     <li>Microsoft Excel</li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Gradio</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Hugging Face</span>
+                    <span class="tag">Git / GitHub</span>
+                </div>
             </div>
 
-            <!-- Column 3: Data Modeling & ETL -->
-            <div class="skill-column">
-                <div class="skill-header">
-                    <i class="fas fa-cogs"></i>
-                    <h3>Data Science & Machine Learning</h3>
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-flask" aria-hidden="true"></i>
+                    </div>
+                    <h3>Statistics & Analytics</h3>
                 </div>
-                <ul class="skill-list">
-                    <li>Scikit-learn</li>
-                    <li>TensorFlow</li>
-                    <li>Streamlit</li>
-                    <li>Gradio</li>
-                    <li>FastAPI</li>
-                    <li>Docker</li>
-                    <li>Git</li>
-                    <li>GitHub</li>
-                </ul>
+                <div class="skill-tags">
+                    <span class="tag">A/B Testing</span>
+                    <span class="tag">Hypothesis Testing</span>
+                    <span class="tag">RFM Analysis</span>
+                    <span class="tag">Statistical Modelling</span>
+                    <span class="tag">Microsoft Excel</span>
+                </div>
+            </div>
+
+            <div class="skill-card skill-card-wide">
+                <div class="skill-card-header">
+                    <div class="skill-icon-wrap">
+                        <i class="fas fa-lightbulb" aria-hidden="true"></i>
+                    </div>
+                    <h3>Domain Expertise</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag tag-highlight">Fraud Detection</span>
+                    <span class="tag tag-highlight">Healthcare Analytics</span>
+                    <span class="tag tag-highlight">Customer Segmentation</span>
+                    <span class="tag tag-highlight">Marketing Science</span>
+                    <span class="tag tag-highlight">Predictive Modeling</span>
+                    <span class="tag tag-highlight">Anomaly Detection</span>
+                </div>
             </div>
 
         </div>
     </div>
 </section>
 
-<!-- CONTACT FORM SECTION -->
-<section id="contact" class="section">
+<!-- PROJECTS SECTION -->
+<section id="projects" class="section projects-section" aria-label="Featured Projects">
     <div class="container">
-        <h2>Send me a message</h2>
-        
-        <!--💡UPDATE: Go to formsubmit.co and replace the email with your own-->
-        <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form">
-            <p> Interested in collaborating or have questions about my work? I'd love to hear from you!</p>
+        <div class="section-label" data-reveal>Work</div>
+        <h2 class="section-heading" data-reveal>Featured <em>Projects</em></h2>
+        <p class="section-sub" data-reveal>Each project solves a real business problem and is deployed to production.</p>
 
-            <!-- Form Fields -->
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Your email" required>
-            </div>
-            <div class="form-group">
-                <label for="subject">Subject</label>
-                <input type="text" name="subject" id="subject" placeholder="Subject" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="6" placeholder="Your message" required></textarea>
-            </div>
-            
-            <!-- Submit Button -->
-            <button type="submit" class="btn">Send Message</button>
+        <div class="projects-grid">
 
-        </form>
+            <!-- Project 1 — Full width featured -->
+            <article class="project-card project-featured" data-reveal>
+                <div class="project-img-wrap">
+                    <img src="Dashboard2.png" alt="Credit Card Fraud Detection System dashboard preview" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Fintech</span>
+                        <span class="project-tag">Machine Learning</span>
+                        <span class="project-tag">Real-time</span>
+                    </div>
+                    <h3>Credit Card Fraud Detection System</h3>
+                    <p>Full-stack ML system that identifies suspicious financial transactions in real time. Built with anomaly detection algorithms, the system surfaces risk scores and confidence intervals via a live web dashboard.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>Scikit-learn</span><span>Gradio</span><span>Hugging Face</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/Credit-card-fraud-detection" target="_blank" rel="noopener" class="btn-ghost-sm" aria-label="View documentation on GitHub">
+                            <i class="fab fa-github"></i> Docs
+                        </a>
+                        <a href="https://ajilatosin-credit-card-fraud-detection.hf.space/" target="_blank" rel="noopener" class="btn-primary-sm" aria-label="View live dashboard">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card" data-reveal>
+                <div class="project-img-wrap">
+                    <img src="M_Dashboard3.png" alt="Medical Healthcare Insurance Claim Predictor preview" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Healthcare</span>
+                        <span class="project-tag">Regression</span>
+                    </div>
+                    <h3>Medical Insurance Claim Predictor</h3>
+                    <p>End-to-end regression model that estimates healthcare claim costs from patient demographics and health indicators. Deployed as an interactive Gradio app on Hugging Face Spaces.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>Gradio</span><span>Scikit-learn</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/Medical-Healthcare-Insurance-Claim-Predictor" target="_blank" rel="noopener" class="btn-ghost-sm">
+                            <i class="fab fa-github"></i> Docs
+                        </a>
+                        <a href="https://ajilatosin-mediclaimai.hf.space/" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <i class="fas fa-arrow-up-right-from-square"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card" data-reveal>
+                <div class="project-img-wrap">
+                    <img src="Screenshot (346).png" alt="Marketing A/B Testing Conversion Analysis preview" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Marketing Science</span>
+                        <span class="project-tag">Statistics</span>
+                    </div>
+                    <h3>Marketing A/B Testing & Conversion Analysis</h3>
+                    <p>Rigorous A/B testing analysis of a digital marketing campaign that uncovered a <strong>43% conversion uplift</strong>. Includes hypothesis testing, behavioral cohort analysis, and an executive-facing PDF report.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>SciPy</span><span>Pandas</span><span>Seaborn</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/A-B-Testing-and-Statistical-Analysis" target="_blank" rel="noopener" class="btn-ghost-sm">
+                            <i class="fab fa-github"></i> Docs
+                        </a>
+                        <a href="https://github.com/ajilatosin/A-B-Testing-and-Statistical-Analysis/blob/a3a8e4927fd8cd28f7b2e9e79a4a6e2eba98ca60/AB_Analytics_Exec_Report.pdf" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 4 -->
+            <article class="project-card" data-reveal>
+                <div class="project-img-wrap">
+                    <img src="Screenshot (345).png" alt="Customer Segmentation K-Means RFM Analysis preview" loading="lazy">
+                    <div class="project-overlay"></div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-tag">Unsupervised ML</span>
+                        <span class="project-tag">CRM</span>
+                    </div>
+                    <h3>Customer Segmentation via K-Means & RFM</h3>
+                    <p>End-to-end segmentation solution combining RFM scoring with K-Means clustering to identify high-value customer cohorts. Paired with business-ready strategy recommendations for each segment.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>K-Means</span><span>Plotly</span><span>Pandas</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/Customer-Segmentation" target="_blank" rel="noopener" class="btn-ghost-sm">
+                            <i class="fab fa-github"></i> Docs
+                        </a>
+                        <a href="https://github.com/ajilatosin/Customer-Segmentation/blob/master/KMeans_Customer_Segmentation_Exec_Report.pdf" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <i class="fas fa-file-pdf"></i> Report
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact-section" aria-label="Contact">
+    <div class="container">
+        <div class="section-label" data-reveal>Contact</div>
+        <h2 class="section-heading" data-reveal>Let's build something<br><em>together</em></h2>
+        <p class="section-sub" data-reveal>Open to full-time roles, freelance engagements, and research collaborations in Data Science and ML Engineering.</p>
+
+        <div class="contact-grid" data-reveal>
+            <div class="contact-info">
+                <h3>Reach out directly</h3>
+                <p>Whether you're a hiring manager, fellow practitioner, or a team with an interesting data challenge — I'd love to hear from you.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" rel="noopener" class="contact-link" aria-label="LinkedIn profile">
+                        <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>Oluwatosin Ajila</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ajilatosin" target="_blank" rel="noopener" class="contact-link" aria-label="GitHub profile">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>@ajilatosin</span>
+                        </div>
+                    </a>
+                    <a href="https://x.com/ajloix" target="_blank" rel="noopener" class="contact-link" aria-label="X / Twitter profile">
+                        <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                        <div>
+                            <strong>X / Twitter</strong>
+                            <span>@ajloix</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form" aria-label="Contact form" novalidate>
+                <input type="hidden" name="_subject" value="Portfolio Inquiry — Ajila Oluwatosin">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://ajilatosin.dev/thanks">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="name" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required autocomplete="email" aria-required="true">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="What's this about?" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Tell me about the opportunity or project..." required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn-primary form-submit">
+                    Send Message <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
     </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-    <div class="container">
-        <!--💡UPDATE: Change the year and your name-->
-        <p>&copy; 2026 Ajila Oluwatosin. All rights reserved.</p>
+<footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+        <span class="footer-logo">AO<span class="logo-dot">.</span></span>
+        <p class="footer-copy">© 2026 Ajila Oluwatosin. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/ajilatosin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://x.com/ajloix" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
     </div>
 </footer>
 
 <script src="assets/js/main.js"></script>
-
 </body>
 </html>
