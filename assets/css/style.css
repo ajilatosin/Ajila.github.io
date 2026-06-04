@@ -1,9 +1,3 @@
-/* =========================================================
-   AJILA OLUWATOSIN — PORTFOLIO STYLESHEET
-   Light-mode first. All elements visible by default.
-   ========================================================= */
-
-/* --- 1. Design Tokens --- */
 :root {
     --white:        #FFFFFF;
     --bg:           #F7F6F3;          /* warm off-white page */
