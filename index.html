@@ -1,445 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajila Oluwatosin — Data Scientist and ML Engineer building predictive systems and data-driven AI solutions.">
+    <meta name="keywords" content="Data Scientist, Machine Learning Engineer, Python, AI, Deep Learning, Lagos, Nigeria">
+    <meta name="author" content="Ajila Oluwatosin">
+    <meta property="og:title" content="Ajila Oluwatosin | Data Scientist & ML Engineer">
+    <meta property="og:description" content="Transforming complex data into impactful AI solutions.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ajila Oluwatosin | Data Scientist & ML Engineer">
 
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-:root{
-  --bg:#0B0D0F;--bg2:#12141A;--bg3:#1A1D25;
-  --brd:rgba(255,255,255,.08);--brd2:rgba(255,255,255,.13);
-  --txt:#F2EFE8;--txt2:#9B98A6;--txt3:#55535E;
-  --gold:#C9A84C;--gold2:#E0BC6A;--goldr:201,168,76;
-  --green:#4ade80;
-  --r:8px;--rl:14px;--rxl:22px;
-  --ff:'DM Serif Display',Georgia,serif;
-  --fs:'DM Sans',-apple-system,sans-serif;
-}
-body{font-family:var(--fs);background:var(--bg);color:var(--txt);font-size:14px;line-height:1.65;-webkit-font-smoothing:antialiased}
-a{color:var(--gold);text-decoration:none}
+    <title>Ajila Oluwatosin | Data Scientist & ML Engineer</title>
+    <link rel="icon" type="image/png" href="/favicon-32x32.png">
 
-/* NAV */
-nav{display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:56px;background:rgba(11,13,15,.85);border-bottom:1px solid var(--brd);position:sticky;top:0;z-index:99;backdrop-filter:blur(12px)}
-.nlogo{font-family:var(--ff);font-size:1.25rem;color:var(--txt)}
-.nlogo span{color:var(--gold)}
-.nlinks{display:flex;gap:4px}
-.nlinks a{font-size:.8rem;color:var(--txt2);padding:6px 12px;border-radius:6px;font-weight:500;transition:color .15s,background .15s}
-.nlinks a:hover{color:var(--txt);background:var(--bg3)}
-.ncta{font-size:.78rem;font-weight:700;color:var(--gold);border:1px solid rgba(var(--goldr),.3);padding:6px 14px;border-radius:6px}
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
 
-/* HERO */
-.hero{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:center;padding:64px 32px 72px;background:var(--bg);position:relative;overflow:hidden}
-.hero::before{content:'';position:absolute;inset:0;background-image:linear-gradient(rgba(var(--goldr),.03) 1px,transparent 1px),linear-gradient(90deg,rgba(var(--goldr),.03) 1px,transparent 1px);background-size:52px 52px;mask-image:radial-gradient(ellipse 80% 70% at 50% 0%,#000 20%,transparent 100%)}
-.h-eye{font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--txt3);margin-bottom:18px}
-.h-eye span{color:rgba(var(--goldr),.5);margin:0 8px}
-.h-name{font-family:var(--ff);font-size:3.8rem;line-height:1.05;letter-spacing:-.03em;margin-bottom:14px}
-.h-name em{font-style:italic;color:var(--gold)}
-.h-role{font-size:.75rem;font-weight:500;letter-spacing:.05em;text-transform:uppercase;color:var(--txt3);margin-bottom:18px}
-.h-role span{color:var(--brd2);margin:0 6px}
-.h-tag{font-size:.95rem;color:var(--txt2);line-height:1.75;max-width:380px;margin-bottom:28px}
-.h-btns{display:flex;gap:12px;margin-bottom:32px;flex-wrap:wrap}
-.btn-g{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:#0B0D0F;font-size:.82rem;font-weight:700;padding:10px 20px;border-radius:var(--r);border:none;cursor:pointer}
-.btn-o{background:transparent;color:var(--txt);border:1px solid var(--brd2);font-size:.82rem;font-weight:500;padding:10px 20px;border-radius:var(--r);display:inline-flex;align-items:center;gap:7px}
-.h-socs{display:flex;gap:12px}
-.h-socs a{width:34px;height:34px;border:1px solid var(--brd);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--txt2);font-size:.8rem}
-/* hero photo side */
-.h-img-wrap{position:relative;display:flex;justify-content:center}
-.h-frame{width:240px;height:300px;border-radius:var(--rxl);border:1px solid var(--brd);overflow:hidden;background:var(--bg3);display:flex;align-items:flex-end;justify-content:center}
-.h-frame-inner{width:100%;height:100%;background:linear-gradient(160deg,#1e2535 0%,#2a3048 50%,#1a1e2d 100%);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:12px}
-.h-avatar{width:120px;height:140px;border-radius:12px 12px 0 0;background:linear-gradient(135deg,#3a4060 0%,#2a3050 100%);margin-bottom:0;position:relative;overflow:hidden}
-.h-avatar-head{position:absolute;top:16px;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;background:#8B9AC0}
-.h-avatar-body{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:80px;height:60px;border-radius:50% 50% 0 0;background:#6B80A8}
-.h-badge{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);background:rgba(11,13,15,.88);border:1px solid var(--brd);border-radius:100px;padding:5px 14px;display:flex;align-items:center;gap:7px;white-space:nowrap;font-size:.7rem;font-weight:600;backdrop-filter:blur(8px)}
-.h-badge i{color:var(--green);font-size:.6rem}
-.stat-c{position:absolute;background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r);padding:10px 14px}
-.stat-c .sn{font-family:var(--ff);font-size:1.5rem;color:var(--gold);line-height:1}
-.stat-c .sl{font-size:.65rem;color:var(--txt3);font-weight:500;margin-top:2px}
-.sc1{top:32px;left:-20px}
-.sc2{bottom:72px;right:-20px}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
-/* SECTION SHARED */
-.sec{padding:64px 32px}
-.sec-lbl{font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
-.sec-h{font-family:var(--ff);font-size:2.4rem;letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
-.sec-h em{font-style:italic;color:var(--gold)}
-.sec-sub{font-size:.9rem;color:var(--txt2);max-width:480px;margin-bottom:48px}
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
-/* ABOUT */
-.about-sec{background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd)}
-.about-grid{display:grid;grid-template-columns:1fr 300px;gap:56px;align-items:start}
-.about-p{color:var(--txt2);font-size:.88rem;line-height:1.8;margin-bottom:12px}
-.hi-list{margin-top:24px;display:flex;flex-direction:column;gap:16px}
-.hi-item{display:flex;gap:14px;align-items:flex-start}
-.hi-icon{width:28px;height:28px;border-radius:6px;background:rgba(var(--goldr),.1);border:1px solid rgba(var(--goldr),.2);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--gold);flex-shrink:0;margin-top:2px}
-.hi-item strong{display:block;font-size:.82rem;font-weight:600;color:var(--txt);margin-bottom:2px}
-.hi-item span{font-size:.78rem;color:var(--txt3);line-height:1.5}
-.about-card{border:1px solid var(--brd);border-radius:var(--rl);overflow:hidden}
-.about-img-ph{height:220px;background:linear-gradient(160deg,#1e2535,#2e3a52);display:flex;align-items:center;justify-content:center}
-.a-av{width:80px;height:96px;position:relative}
-.a-head{position:absolute;top:0;left:50%;transform:translateX(-50%);width:36px;height:36px;border-radius:50%;background:#8B9AC0}
-.a-body{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:64px;height:48px;border-radius:50% 50% 0 0;background:#6B80A8}
-.about-meta{background:var(--bg3);border-top:1px solid var(--brd);padding:16px 20px;display:flex;flex-direction:column;gap:10px}
-.m-row{display:flex;justify-content:space-between;font-size:.78rem}
-.m-k{color:var(--txt3);font-weight:500}
-.m-v{color:var(--txt2);font-weight:500}
-.m-avail{color:var(--green);display:flex;align-items:center;gap:6px}
-.pdot{width:6px;height:6px;border-radius:50%;background:var(--green);flex-shrink:0;animation:pr 2s ease infinite}
-@keyframes pr{0%{box-shadow:0 0 0 0 rgba(74,222,128,.5)}70%{box-shadow:0 0 0 6px rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
-.cv-btn{margin-top:8px;width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#0B0D0F;font-size:.8rem;font-weight:700;padding:9px;border-radius:var(--r)}
+<!-- BACK TO TOP -->
+<a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up" aria-hidden="true"></i>
+</a>
 
-/* SKILLS */
-.skills-sec{background:var(--bg)}
-.sk-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.sk-card{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--rl);padding:20px}
-.sk-card-wide{grid-column:1/-1}
-.sk-hdr{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.sk-ico{width:30px;height:30px;border-radius:6px;background:rgba(var(--goldr),.1);border:1px solid rgba(var(--goldr),.2);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--gold);flex-shrink:0}
-.sk-hdr h3{font-size:.82rem;font-weight:600;color:var(--txt)}
-.tags{display:flex;flex-wrap:wrap;gap:6px}
-.tag{font-size:.7rem;font-weight:500;color:var(--txt2);background:var(--bg3);border:1px solid var(--brd);padding:3px 10px;border-radius:100px}
-.tag-hi{color:rgba(var(--goldr),.9);border-color:rgba(var(--goldr),.25);background:rgba(var(--goldr),.07)}
-
-/* PROJECTS */
-.proj-sec{background:var(--bg2);border-top:1px solid var(--brd);border-bottom:1px solid var(--brd)}
-.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-.proj-feat{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
-.proj-card{background:var(--bg3);border:1px solid var(--brd);border-radius:var(--rl);overflow:hidden;display:flex;flex-direction:column}
-.proj-feat .p-img{height:100%;min-height:240px}
-.p-img{height:160px;overflow:hidden;background:var(--bg);position:relative}
-.p-img-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--txt3);letter-spacing:.08em;text-transform:uppercase}
-.p-img-ph.fraud{background:linear-gradient(135deg,#0d1520,#162035)}
-.p-img-ph.med{background:linear-gradient(135deg,#0d1a17,#152a22)}
-.p-img-ph.ab{background:linear-gradient(135deg,#1a100d,#2a1810)}
-.p-img-ph.seg{background:linear-gradient(135deg,#0d1020,#152030)}
-/* mini chart decorations */
-.mini-bars{display:flex;align-items:flex-end;gap:3px;height:48px}
-.mb{width:12px;border-radius:2px 2px 0 0;background:rgba(var(--goldr),.3)}
-.mb.hi{background:rgba(var(--goldr),.7)}
-.mini-line{width:90px;height:40px;position:relative}
-.mini-line svg{overflow:visible}
-.p-body{padding:20px 22px 22px;flex:1;display:flex;flex-direction:column}
-.p-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:10px}
-.p-tag{font-size:.65rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);background:rgba(var(--goldr),.08);border:1px solid rgba(var(--goldr),.2);padding:2px 8px;border-radius:100px}
-.p-body h3{font-family:var(--ff);font-size:1.15rem;letter-spacing:-.02em;color:var(--txt);margin-bottom:8px;line-height:1.25}
-.p-body p{font-size:.8rem;color:var(--txt2);line-height:1.7;flex:1;margin-bottom:14px}
-.p-body p strong{color:var(--gold)}
-.p-stack{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:14px}
-.p-stack span{font-size:.65rem;color:var(--txt3);background:var(--bg2);border:1px solid var(--brd);padding:2px 8px;border-radius:var(--r)}
-.p-acts{display:flex;gap:8px;margin-top:auto}
-.pa-g{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:500;color:var(--txt2);border:1px solid var(--brd);padding:6px 12px;border-radius:var(--r)}
-.pa-p{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:700;background:var(--gold);color:#0B0D0F;padding:6px 12px;border-radius:var(--r)}
-
-/* CONTACT */
-.contact-sec{background:var(--bg)}
-.c-grid{display:grid;grid-template-columns:280px 1fr;gap:48px;align-items:start}
-.c-info h3{font-family:var(--ff);font-size:1.35rem;color:var(--txt);margin-bottom:8px}
-.c-info>p{font-size:.8rem;color:var(--txt2);line-height:1.75;margin-bottom:24px}
-.c-links{display:flex;flex-direction:column;gap:8px}
-.c-link{display:flex;align-items:center;gap:12px;padding:12px 14px;background:var(--bg2);border:1px solid var(--brd);border-radius:var(--r)}
-.c-link-ico{width:30px;height:30px;border-radius:50%;background:rgba(var(--goldr),.1);border:1px solid rgba(var(--goldr),.2);display:flex;align-items:center;justify-content:center;font-size:.75rem;color:var(--gold);flex-shrink:0}
-.c-link strong{display:block;font-size:.78rem;font-weight:600;color:var(--txt)}
-.c-link span{font-size:.7rem;color:var(--txt3)}
-.c-form{background:var(--bg2);border:1px solid var(--brd);border-radius:var(--rl);padding:24px 28px}
-.f-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
-.f-grp{display:flex;flex-direction:column;gap:6px;margin-bottom:14px}
-.f-grp label{font-size:.65rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--txt3)}
-.f-grp input,.f-grp textarea{background:var(--bg3);border:1px solid var(--brd);border-radius:var(--r);color:var(--txt);font-family:var(--fs);font-size:.82rem;padding:10px 12px;width:100%;resize:vertical}
-.f-grp textarea{height:90px}
-.f-grp input::placeholder,.f-grp textarea::placeholder{color:var(--txt3)}
-.f-btn{width:100%;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--gold);color:#0B0D0F;font-size:.82rem;font-weight:700;padding:11px;border-radius:var(--r);border:none;cursor:pointer}
-
-/* FOOTER */
-footer{background:var(--bg2);border-top:1px solid var(--brd);padding:24px 32px;display:flex;align-items:center;justify-content:space-between}
-.f-logo{font-family:var(--ff);font-size:1.1rem;color:var(--txt)}
-.f-copy{font-size:.72rem;color:var(--txt3)}
-.f-socs{display:flex;gap:10px}
-.f-socs a{width:30px;height:30px;border:1px solid var(--brd);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;color:var(--txt2)}
-
-/* divider */
-.div{height:1px;background:var(--brd);margin:0 32px}
-</style>
-
-<!-- NAV -->
-<nav>
-  <span class="nlogo">AO<span>.</span></span>
-  <div class="nlinks">
-    <a href="#">About</a><a href="#">Projects</a><a href="#">Skills</a><a href="#">Contact</a>
-  </div>
-  <a href="#" class="ncta">↓ Resume</a>
+<!-- ── NAVIGATION ──────────────────────────────────────── -->
+<nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+        <a href="#top" class="nav-logo" aria-label="Home — Ajila Oluwatosin">AO<span class="logo-dot">.</span></a>
+        <ul class="nav-links" id="navLinks" role="list">
+            <li><a href="#about"    class="nav-link">About</a></li>
+            <li><a href="#skills"   class="nav-link">Skills</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact"  class="nav-link">Contact</a></li>
+        </ul>
+        <a href="assets/Your_Name_CV.pdf" download class="nav-cta" aria-label="Download Resume PDF">
+            <i class="fas fa-arrow-down" aria-hidden="true"></i> Resume
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
 </nav>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="h-left" style="position:relative;z-index:1">
-    <p class="h-eye">Lagos, Nigeria <span>·</span> Open to Global Opportunities</p>
-    <h1 class="h-name">Ajila<br><em>Oluwatosin</em></h1>
-    <p class="h-role">Data Scientist <span>·</span> ML Engineer <span>·</span> Data Analyst</p>
-    <p class="h-tag">I build ML systems that turn messy data into decisions — from fraud detection models to predictive healthcare analytics.</p>
-    <div class="h-btns">
-      <button class="btn-g"><i class="ti ti-arrow-right" aria-hidden="true"></i> View My Work</button>
-      <button class="btn-o">Get in Touch</button>
-    </div>
-    <div class="h-socs">
-      <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
-      <a href="#" aria-label="GitHub"><i class="ti ti-brand-github" aria-hidden="true"></i></a>
-      <a href="#" aria-label="X"><i class="ti ti-brand-x" aria-hidden="true"></i></a>
-    </div>
-  </div>
-  <div class="h-img-wrap" style="position:relative;z-index:1">
-    <div class="h-frame">
-      <div class="h-frame-inner">
-        <div class="h-avatar">
-          <div class="h-avatar-head"></div>
-          <div class="h-avatar-body"></div>
-        </div>
-      </div>
-    </div>
-    <div class="h-badge">
-      <i class="ti ti-circle-check" style="color:var(--green);font-size:.75rem" aria-hidden="true"></i> Available for Work
-    </div>
-    <div class="stat-c sc1"><div class="sn">4+</div><div class="sl">Projects Deployed</div></div>
-    <div class="stat-c sc2"><div class="sn">43%</div><div class="sl">A/B Uplift Delivered</div></div>
-  </div>
-</div>
-
-<div class="div"></div>
-
-<!-- ABOUT -->
-<div class="sec about-sec">
-  <div class="about-grid">
-    <div>
-      <div class="sec-lbl">About</div>
-      <h2 class="sec-h">Turning data complexity<br>into <em>business clarity</em></h2>
-      <p class="about-p">I'm a Data Scientist and ML Engineer focused on building end-to-end AI systems — from exploratory data analysis to production model deployment. I thrive at the intersection of statistical rigor and practical engineering.</p>
-      <p class="about-p">My work spans financial services (fraud detection), healthcare analytics (insurance cost prediction), and marketing science (A/B testing, customer segmentation).</p>
-      <div class="hi-list">
-        <div class="hi-item">
-          <div class="hi-icon"><i class="ti ti-brain" aria-hidden="true"></i></div>
-          <div><strong>ML Engineering</strong><span>End-to-end model development, training, and deployment on Hugging Face & cloud infrastructure</span></div>
-        </div>
-        <div class="hi-item">
-          <div class="hi-icon"><i class="ti ti-chart-line" aria-hidden="true"></i></div>
-          <div><strong>Business Analytics</strong><span>Statistical inference, A/B testing, and KPI-driven storytelling that informs executive decisions</span></div>
-        </div>
-        <div class="hi-item">
-          <div class="hi-icon"><i class="ti ti-layers-difference" aria-hidden="true"></i></div>
-          <div><strong>Data Engineering</strong><span>SQL, Python pipelines, FastAPI development, containerization with Docker</span></div>
-        </div>
-      </div>
-    </div>
-    <div>
-      <div class="about-card">
-        <div class="about-img-ph">
-          <div class="a-av"><div class="a-head"></div><div class="a-body"></div></div>
-        </div>
-        <div class="about-meta">
-          <div class="m-row"><span class="m-k">Location</span><span class="m-v">Lagos, Nigeria</span></div>
-          <div class="m-row"><span class="m-k">Focus</span><span class="m-v">ML · Analytics · AI</span></div>
-          <div class="m-row"><span class="m-k">Status</span><span class="m-v m-avail"><span class="pdot"></span>Open to Opportunities</span></div>
-          <a href="#" class="cv-btn"><i class="ti ti-file-arrow-down" aria-hidden="true"></i> Download CV</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="div"></div>
-
-<!-- SKILLS -->
-<div class="sec skills-sec">
-  <div class="sec-lbl">Skills</div>
-  <h2 class="sec-h">Technical <em>Toolkit</em></h2>
-  <p class="sec-sub">Tools and technologies I use to take data from raw to revenue-generating.</p>
-  <div class="sk-grid">
-    <div class="sk-card">
-      <div class="sk-hdr"><div class="sk-ico"><i class="ti ti-code" aria-hidden="true"></i></div><h3>Languages & Core</h3></div>
-      <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Pandas</span><span class="tag">NumPy</span><span class="tag">SciPy</span></div>
-    </div>
-    <div class="sk-card">
-      <div class="sk-hdr"><div class="sk-ico"><i class="ti ti-cpu" aria-hidden="true"></i></div><h3>Machine Learning</h3></div>
-      <div class="tags"><span class="tag">Scikit-learn</span><span class="tag">TensorFlow</span><span class="tag">XGBoost</span><span class="tag">K-Means</span><span class="tag">Random Forest</span></div>
-    </div>
-    <div class="sk-card">
-      <div class="sk-hdr"><div class="sk-ico"><i class="ti ti-chart-bar" aria-hidden="true"></i></div><h3>Data Visualization</h3></div>
-      <div class="tags"><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span class="tag">Plotly</span><span class="tag">Tableau</span></div>
-    </div>
-    <div class="sk-card">
-      <div class="sk-hdr"><div class="sk-ico"><i class="ti ti-server" aria-hidden="true"></i></div><h3>MLOps & Deployment</h3></div>
-      <div class="tags"><span class="tag">FastAPI</span><span class="tag">Gradio</span><span class="tag">Streamlit</span><span class="tag">Docker</span><span class="tag">Hugging Face</span><span class="tag">Git</span></div>
-    </div>
-    <div class="sk-card">
-      <div class="sk-hdr"><div class="sk-ico"><i class="ti ti-flask" aria-hidden="true"></i></div><h3>Statistics & Analytics</h3></div>
-      <div class="tags"><span class="tag">A/B Testing</span><span class="tag">Hypothesis Testing</span><span class="tag">RFM Analysis</span><span class="tag">Excel</span></div>
-    </div>
-    <div class="sk-card sk-card-wide">
-      <div class="sk-hdr"><div class="sk-ico"><i class="ti ti-bulb" aria-hidden="true"></i></div><h3>Domain Expertise</h3></div>
-      <div class="tags">
-        <span class="tag tag-hi">Fraud Detection</span><span class="tag tag-hi">Healthcare Analytics</span><span class="tag tag-hi">Customer Segmentation</span><span class="tag tag-hi">Marketing Science</span><span class="tag tag-hi">Predictive Modeling</span><span class="tag tag-hi">Anomaly Detection</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="div"></div>
-
-<!-- PROJECTS -->
-<div class="sec proj-sec">
-  <div class="sec-lbl">Work</div>
-  <h2 class="sec-h">Featured <em>Projects</em></h2>
-  <p class="sec-sub">Each project solves a real business problem and is deployed to production.</p>
-  <div class="proj-grid">
-
-    <!-- Featured -->
-    <div class="proj-card proj-feat">
-      <div class="p-img"><div class="p-img-ph fraud">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:10px">
-          <div style="font-size:.6rem;letter-spacing:.1em;color:rgba(var(--goldr),.5);text-transform:uppercase">Fraud Detection · Live Dashboard</div>
-          <div class="mini-bars">
-            <div class="mb" style="height:18px"></div><div class="mb" style="height:28px"></div><div class="mb hi" style="height:40px"></div><div class="mb" style="height:22px"></div><div class="mb hi" style="height:44px"></div><div class="mb" style="height:16px"></div><div class="mb" style="height:32px"></div><div class="mb hi" style="height:36px"></div>
-          </div>
-          <div style="display:flex;gap:8px;margin-top:4px">
-            <div style="font-size:.65rem;color:rgba(var(--goldr),.6);background:rgba(var(--goldr),.08);border:1px solid rgba(var(--goldr),.2);padding:2px 8px;border-radius:4px">Risk Score</div>
-            <div style="font-size:.65rem;color:rgba(74,222,128,.7);background:rgba(74,222,128,.08);border:1px solid rgba(74,222,128,.2);padding:2px 8px;border-radius:4px">Real-time</div>
-          </div>
-        </div>
-      </div></div>
-      <div class="p-body">
-        <div class="p-tags"><span class="p-tag">Fintech</span><span class="p-tag">Machine Learning</span><span class="p-tag">Real-time</span></div>
-        <h3>Credit Card Fraud Detection System</h3>
-        <p>Full-stack ML system identifying suspicious transactions in real time using anomaly detection. Surfaces risk scores and confidence intervals via a live web dashboard.</p>
-        <div class="p-stack"><span>Python</span><span>Scikit-learn</span><span>Gradio</span><span>Hugging Face</span></div>
-        <div class="p-acts">
-          <a href="#" class="pa-g"><i class="ti ti-brand-github" aria-hidden="true"></i> Docs</a>
-          <a href="#" class="pa-p"><i class="ti ti-external-link" aria-hidden="true"></i> Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 2 -->
-    <div class="proj-card">
-      <div class="p-img"><div class="p-img-ph med">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
-          <div style="font-size:.55rem;letter-spacing:.1em;color:rgba(74,222,128,.4);text-transform:uppercase">Healthcare · Regression Model</div>
-          <div style="display:flex;align-items:flex-end;gap:2px;height:40px">
-            <div style="width:10px;height:20px;background:rgba(74,222,128,.2);border-radius:2px 2px 0 0"></div>
-            <div style="width:10px;height:32px;background:rgba(74,222,128,.35);border-radius:2px 2px 0 0"></div>
-            <div style="width:10px;height:40px;background:rgba(74,222,128,.55);border-radius:2px 2px 0 0"></div>
-            <div style="width:10px;height:28px;background:rgba(74,222,128,.35);border-radius:2px 2px 0 0"></div>
-            <div style="width:10px;height:36px;background:rgba(74,222,128,.45);border-radius:2px 2px 0 0"></div>
-          </div>
-        </div>
-      </div></div>
-      <div class="p-body">
-        <div class="p-tags"><span class="p-tag">Healthcare</span><span class="p-tag">Regression</span></div>
-        <h3>Medical Insurance Claim Predictor</h3>
-        <p>End-to-end regression model estimating healthcare claim costs from patient demographics. Deployed as an interactive Gradio app on Hugging Face Spaces.</p>
-        <div class="p-stack"><span>Python</span><span>Gradio</span><span>Scikit-learn</span></div>
-        <div class="p-acts">
-          <a href="#" class="pa-g"><i class="ti ti-brand-github" aria-hidden="true"></i> Docs</a>
-          <a href="#" class="pa-p"><i class="ti ti-external-link" aria-hidden="true"></i> Live Demo</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Project 3 -->
-    <div class="proj-card">
-      <div class="p-img"><div class="p-img-ph ab">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
-          <div style="font-size:.55rem;letter-spacing:.1em;color:rgba(var(--goldr),.4);text-transform:uppercase">A/B Test · Conversion Uplift</div>
-          <div style="display:flex;gap:10px;align-items:flex-end">
-            <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
-              <div style="width:28px;height:30px;background:rgba(150,150,200,.25);border-radius:2px 2px 0 0"></div>
-              <div style="font-size:.55rem;color:var(--txt3)">Control</div>
+<!-- ── HERO ───────────────────────────────────────────── -->
+<section id="top" class="hero" aria-label="Introduction">
+    <div class="hero-container">
+        <!-- Left: text -->
+        <div class="hero-content">
+            <p class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                Lagos, Nigeria &nbsp;·&nbsp; Open to Global Roles
+            </p>
+            <h1 class="hero-name">Ajila<br><em>Oluwatosin</em></h1>
+            <p class="hero-title">
+                Data Scientist
+                <span class="title-sep">·</span>
+                ML Engineer
+                <span class="title-sep">·</span>
+                Data Analyst
+            </p>
+            <p class="hero-tagline">
+                I build ML systems that turn messy data into decisions — from real-time fraud detection to predictive healthcare analytics deployed in production.
+            </p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View My Work</a>
+                <a href="#contact"  class="btn-ghost">Get in Touch</a>
             </div>
-            <div style="display:flex;flex-direction:column;align-items:center;gap:3px">
-              <div style="width:28px;height:44px;background:rgba(var(--goldr),.45);border-radius:2px 2px 0 0"></div>
-              <div style="font-size:.55rem;color:rgba(var(--goldr),.7)">+43%</div>
+            <div class="hero-socials">
+                <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                    <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/ajilatosin" target="_blank" rel="noopener" aria-label="GitHub profile">
+                    <i class="fab fa-github" aria-hidden="true"></i>
+                </a>
+                <a href="https://x.com/ajloix" target="_blank" rel="noopener" aria-label="X / Twitter profile">
+                    <i class="fa-brands fa-x-twitter" aria-hidden="true"></i>
+                </a>
             </div>
-          </div>
         </div>
-      </div></div>
-      <div class="p-body">
-        <div class="p-tags"><span class="p-tag">Marketing Science</span><span class="p-tag">Statistics</span></div>
-        <h3>Marketing A/B Testing & Conversion Analysis</h3>
-        <p>Rigorous A/B testing analysis revealing a <strong>43% conversion uplift</strong>. Includes hypothesis testing, behavioral cohort analysis, and an executive PDF report.</p>
-        <div class="p-stack"><span>Python</span><span>SciPy</span><span>Pandas</span><span>Seaborn</span></div>
-        <div class="p-acts">
-          <a href="#" class="pa-g"><i class="ti ti-brand-github" aria-hidden="true"></i> Docs</a>
-          <a href="#" class="pa-p"><i class="ti ti-file-type-pdf" aria-hidden="true"></i> Report</a>
+
+        <!-- Right: photo + stat cards -->
+        <div class="hero-image-wrap">
+            <div class="stat-card stat-card-1">
+                <span class="stat-num">4+</span>
+                <span class="stat-label">Projects Deployed</span>
+            </div>
+            <div class="hero-image-frame">
+                <img src="Confident professional in light blue attire.png"
+                     alt="Ajila Oluwatosin — Data Scientist and ML Engineer"
+                     class="hero-photo"
+                     loading="eager">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for Opportunities
+                </div>
+            </div>
+            <div class="stat-card stat-card-2">
+                <span class="stat-num">43%</span>
+                <span class="stat-label">Conversion Uplift</span>
+            </div>
         </div>
-      </div>
     </div>
+</section>
 
-    <!-- Project 4 -->
-    <div class="proj-card">
-      <div class="p-img"><div class="p-img-ph seg">
-        <div style="display:flex;flex-direction:column;align-items:center;gap:8px">
-          <div style="font-size:.55rem;letter-spacing:.1em;color:rgba(100,160,255,.4);text-transform:uppercase">Segmentation · K-Means Clusters</div>
-          <div style="display:flex;gap:5px">
-            <div style="width:14px;height:14px;border-radius:50%;background:rgba(var(--goldr),.5)"></div>
-            <div style="width:10px;height:10px;border-radius:50%;background:rgba(100,180,255,.4);margin-top:4px"></div>
-            <div style="width:16px;height:16px;border-radius:50%;background:rgba(var(--goldr),.35);margin-top:2px"></div>
-            <div style="width:9px;height:9px;border-radius:50%;background:rgba(100,180,255,.5);margin-top:6px"></div>
-            <div style="width:12px;height:12px;border-radius:50%;background:rgba(var(--goldr),.6);margin-top:1px"></div>
-          </div>
+<!-- ── ABOUT ──────────────────────────────────────────── -->
+<section id="about" class="section section-alt" aria-label="About Me">
+    <div class="container">
+        <p class="section-eyebrow">About</p>
+        <div class="about-grid">
+            <!-- Text -->
+            <div class="about-text">
+                <h2 class="section-heading">Turning data complexity<br>into <em>business clarity</em></h2>
+                <p>I'm a Data Scientist and Machine Learning Engineer with a focus on building end-to-end AI systems — from exploratory data analysis and statistical modelling to production model deployment. I thrive at the intersection of rigour and pragmatism.</p>
+                <p>My work spans financial services (fraud detection), healthcare analytics (insurance cost prediction), and marketing science (A/B testing, customer segmentation). I design solutions that don't just perform well in notebooks — they ship to production and generate measurable impact.</p>
+
+                <div class="about-highlights">
+                    <div class="highlight-item">
+                        <div class="hi-icon" aria-hidden="true"><i class="fas fa-brain"></i></div>
+                        <div>
+                            <strong>ML Engineering</strong>
+                            <span>End-to-end model development, training, and deployment on Hugging Face &amp; cloud infrastructure</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="hi-icon" aria-hidden="true"><i class="fas fa-chart-line"></i></div>
+                        <div>
+                            <strong>Business Analytics</strong>
+                            <span>Statistical inference, A/B testing, and KPI-driven storytelling that informs executive decisions</span>
+                        </div>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="hi-icon" aria-hidden="true"><i class="fas fa-layer-group"></i></div>
+                        <div>
+                            <strong>Data Engineering Fundamentals</strong>
+                            <span>SQL, Python pipelines, FastAPI development, containerisation with Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo card -->
+            <div>
+                <div class="about-card">
+                    <div class="about-img">
+                        <img src="Confident professional in light blue attire.png" alt="Ajila Oluwatosin" loading="lazy">
+                    </div>
+                    <div class="about-meta">
+                        <div class="meta-row">
+                            <span class="meta-k">Location</span>
+                            <span class="meta-v">Lagos, Nigeria</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-k">Focus</span>
+                            <span class="meta-v">ML · Analytics · AI</span>
+                        </div>
+                        <div class="meta-row">
+                            <span class="meta-k">Status</span>
+                            <span class="meta-v meta-avail"><span class="pulse-dot"></span> Open to Opportunities</span>
+                        </div>
+                        <a href="assets/Your_Name_CV.pdf" download class="btn-primary about-cv">
+                            <i class="fas fa-file-arrow-down" aria-hidden="true"></i> Download CV
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div></div>
-      <div class="p-body">
-        <div class="p-tags"><span class="p-tag">Unsupervised ML</span><span class="p-tag">CRM</span></div>
-        <h3>Customer Segmentation via K-Means & RFM</h3>
-        <p>Segmentation solution combining RFM scoring with K-Means clustering to identify high-value customer cohorts with actionable business strategy recommendations.</p>
-        <div class="p-stack"><span>Python</span><span>K-Means</span><span>Plotly</span><span>Pandas</span></div>
-        <div class="p-acts">
-          <a href="#" class="pa-g"><i class="ti ti-brand-github" aria-hidden="true"></i> Docs</a>
-          <a href="#" class="pa-p"><i class="ti ti-file-type-pdf" aria-hidden="true"></i> Report</a>
-        </div>
-      </div>
     </div>
+</section>
 
-  </div>
-</div>
+<!-- ── SKILLS ──────────────────────────────────────────── -->
+<section id="skills" class="section section-white" aria-label="Technical Skills">
+    <div class="container">
+        <p class="section-eyebrow">Skills</p>
+        <h2 class="section-heading">Technical <em>Toolkit</em></h2>
+        <p class="section-sub">Tools and technologies I use to take data from raw to revenue-generating.</p>
 
-<div class="div"></div>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="sk-icon" aria-hidden="true"><i class="fas fa-code"></i></div>
+                    <h3>Languages &amp; Core</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">SciPy</span>
+                </div>
+            </div>
 
-<!-- CONTACT -->
-<div class="sec contact-sec">
-  <div class="sec-lbl">Contact</div>
-  <h2 class="sec-h">Let's build something<br><em>together</em></h2>
-  <p class="sec-sub">Open to full-time roles, freelance engagements, and research collaborations.</p>
-  <div class="c-grid">
-    <div class="c-info">
-      <h3>Reach out directly</h3>
-      <p>Whether you're a hiring manager, fellow practitioner, or a team with an interesting data challenge — I'd love to hear from you.</p>
-      <div class="c-links">
-        <div class="c-link">
-          <div class="c-link-ico"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></div>
-          <div><strong>LinkedIn</strong><span>Oluwatosin Ajila</span></div>
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="sk-icon" aria-hidden="true"><i class="fas fa-robot"></i></div>
+                    <h3>Machine Learning</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">K-Means</span>
+                    <span class="tag">Random Forest</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="sk-icon" aria-hidden="true"><i class="fas fa-chart-column"></i></div>
+                    <h3>Data Visualisation</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                    <span class="tag">Plotly</span>
+                    <span class="tag">Tableau</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="sk-icon" aria-hidden="true"><i class="fas fa-server"></i></div>
+                    <h3>MLOps &amp; Deployment</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Gradio</span>
+                    <span class="tag">Streamlit</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Hugging Face</span>
+                    <span class="tag">Git / GitHub</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-card-header">
+                    <div class="sk-icon" aria-hidden="true"><i class="fas fa-flask"></i></div>
+                    <h3>Statistics &amp; Analytics</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag">A/B Testing</span>
+                    <span class="tag">Hypothesis Testing</span>
+                    <span class="tag">RFM Analysis</span>
+                    <span class="tag">Statistical Modelling</span>
+                    <span class="tag">Microsoft Excel</span>
+                </div>
+            </div>
+
+            <div class="skill-card skill-card-wide">
+                <div class="skill-card-header">
+                    <div class="sk-icon" aria-hidden="true"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Domain Expertise</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="tag tag-accent">Fraud Detection</span>
+                    <span class="tag tag-accent">Healthcare Analytics</span>
+                    <span class="tag tag-accent">Customer Segmentation</span>
+                    <span class="tag tag-accent">Marketing Science</span>
+                    <span class="tag tag-accent">Predictive Modelling</span>
+                    <span class="tag tag-accent">Anomaly Detection</span>
+                </div>
+            </div>
         </div>
-        <div class="c-link">
-          <div class="c-link-ico"><i class="ti ti-brand-github" aria-hidden="true"></i></div>
-          <div><strong>GitHub</strong><span>@ajilatosin</span></div>
-        </div>
-        <div class="c-link">
-          <div class="c-link-ico"><i class="ti ti-brand-x" aria-hidden="true"></i></div>
-          <div><strong>X / Twitter</strong><span>@ajloix</span></div>
-        </div>
-      </div>
     </div>
-    <div class="c-form">
-      <div class="f-row">
-        <div class="f-grp" style="margin-bottom:0"><label>Name</label><input type="text" placeholder="Your name"></div>
-        <div class="f-grp" style="margin-bottom:0"><label>Email</label><input type="email" placeholder="you@company.com"></div>
-      </div>
-      <div class="f-grp"><label>Subject</label><input type="text" placeholder="What's this about?"></div>
-      <div class="f-grp"><label>Message</label><textarea placeholder="Tell me about the opportunity..."></textarea></div>
-      <button class="f-btn"><i class="ti ti-send" aria-hidden="true"></i> Send Message</button>
-    </div>
-  </div>
-</div>
+</section>
 
-<!-- FOOTER -->
-<footer>
-  <span class="f-logo">AO<span style="color:var(--gold)">.</span></span>
-  <span class="f-copy">© 2026 Ajila Oluwatosin. All rights reserved.</span>
-  <div class="f-socs">
-    <a href="#" aria-label="LinkedIn"><i class="ti ti-brand-linkedin" aria-hidden="true"></i></a>
-    <a href="#" aria-label="GitHub"><i class="ti ti-brand-github" aria-hidden="true"></i></a>
-    <a href="#" aria-label="X"><i class="ti ti-brand-x" aria-hidden="true"></i></a>
-  </div>
+<!-- ── PROJECTS ────────────────────────────────────────── -->
+<section id="projects" class="section section-alt" aria-label="Featured Projects">
+    <div class="container">
+        <p class="section-eyebrow">Work</p>
+        <h2 class="section-heading">Featured <em>Projects</em></h2>
+        <p class="section-sub">Each project solves a real business problem and is deployed to production.</p>
+
+        <div class="projects-grid">
+
+            <!-- Featured (full-width) -->
+            <article class="project-card project-featured">
+                <div class="project-img-wrap">
+                    <img src="Dashboard2.png" alt="Credit Card Fraud Detection System — dashboard preview" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="p-tag">Fintech</span>
+                        <span class="p-tag">Machine Learning</span>
+                        <span class="p-tag">Real-time</span>
+                    </div>
+                    <h3>Credit Card Fraud Detection System</h3>
+                    <p>Full-stack ML system that identifies suspicious financial transactions in real time. Built with anomaly detection algorithms, the system surfaces risk scores and confidence intervals via a live web dashboard — ready for production integration.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>Scikit-learn</span><span>Gradio</span><span>Hugging Face</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/Credit-card-fraud-detection" target="_blank" rel="noopener" class="btn-ghost-sm" aria-label="View GitHub documentation for Fraud Detection">
+                            <i class="fab fa-github" aria-hidden="true"></i> Documentation
+                        </a>
+                        <a href="https://ajilatosin-credit-card-fraud-detection.hf.space/" target="_blank" rel="noopener" class="btn-primary-sm" aria-label="View live fraud detection dashboard">
+                            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 2 -->
+            <article class="project-card">
+                <div class="project-img-wrap">
+                    <img src="M_Dashboard3.png" alt="Medical Insurance Claim Predictor — dashboard preview" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="p-tag">Healthcare</span>
+                        <span class="p-tag">Regression</span>
+                    </div>
+                    <h3>Medical Insurance Claim Predictor</h3>
+                    <p>End-to-end regression model that estimates healthcare claim costs from patient demographics and health indicators. Deployed as an interactive Gradio app on Hugging Face Spaces for instant predictions.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>Gradio</span><span>Scikit-learn</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/Medical-Healthcare-Insurance-Claim-Predictor" target="_blank" rel="noopener" class="btn-ghost-sm">
+                            <i class="fab fa-github" aria-hidden="true"></i> Documentation
+                        </a>
+                        <a href="https://ajilatosin-mediclaimai.hf.space/" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Project 3 -->
+            <article class="project-card">
+                <div class="project-img-wrap">
+                    <img src="Screenshot (346).png" alt="Marketing A/B Testing Analysis — preview" loading="lazy">
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="p-tag">Marketing Science</span>
+                        <span class="p-tag">Statistics</span>
+                    </div>
+                    <h3>Marketing A/B Testing &amp; Conversion Analysis</h3>
+                    <p>Rigorous statistical analysis of a digital marketing campaign revealing a <strong>43% conversion uplift</strong>. Includes hypothesis testing, behavioural cohort analysis, and an executive-ready PDF report.</p>
+                    <div class="project-stack">
+                        <span>Python</span><span>SciPy</span><span>Pandas</span><span>Seaborn</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/ajilatosin/A-B-Testing-and-Statistical-Analysis" target="_blank" rel="noopener" class="btn-ghost-sm">
+                            <i class="fab fa-github" aria-hidden="true"></i> Documentation
+                        </a>
+                        <a href="https://github.com/ajilatosin/A-B-Testing-and-Statistical-Analysis/blob/a3a8e4927fd8cd28f7b2e9e79a4a6e2eba98ca60/AB_Analytics_Exec_Report.pdf" target="_blank" rel="noopener" class="btn-primary-sm">
+                            <i class="fas fa-file-pdf" aria-hidden="true"></i> View Report
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── CONTACT ────────────────────────────────────────── -->
+<section id="contact" class="section section-white" aria-label="Contact">
+    <div class="container">
+        <p class="section-eyebrow">Contact</p>
+        <h2 class="section-heading">Let's build something<br><em>together</em></h2>
+        <p class="section-sub">Open to full-time roles, freelance engagements, and research collaborations in Data Science and ML Engineering.</p>
+
+        <div class="contact-grid">
+            <!-- Info -->
+            <div class="contact-info">
+                <h3>Reach out directly</h3>
+                <p>Whether you're a hiring manager, fellow practitioner, or a team with an interesting data challenge — I'd love to hear from you.</p>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" rel="noopener" class="contact-link" aria-label="Visit LinkedIn profile">
+                        <div class="cl-icon" aria-hidden="true"><i class="fab fa-linkedin-in"></i></div>
+                        <div>
+                            <strong>LinkedIn</strong>
+                            <span>Oluwatosin Ajila</span>
+                        </div>
+                    </a>
+                    <a href="https://github.com/ajilatosin" target="_blank" rel="noopener" class="contact-link" aria-label="Visit GitHub profile">
+                        <div class="cl-icon" aria-hidden="true"><i class="fab fa-github"></i></div>
+                        <div>
+                            <strong>GitHub</strong>
+                            <span>@ajilatosin</span>
+                        </div>
+                    </a>
+                    <a href="https://x.com/ajloix" target="_blank" rel="noopener" class="contact-link" aria-label="Visit X profile">
+                        <div class="cl-icon" aria-hidden="true"><i class="fa-brands fa-x-twitter"></i></div>
+                        <div>
+                            <strong>X / Twitter</strong>
+                            <span>@ajloix</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <form action="https://formsubmit.co/your-email@example.com" method="POST" class="contact-form" aria-label="Send a message" novalidate>
+                <input type="hidden" name="_subject" value="Portfolio Inquiry — Ajila Oluwatosin">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Your name" required autocomplete="name" aria-required="true">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="you@company.com" required autocomplete="email" aria-required="true">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="What's this about?" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="5" placeholder="Tell me about the opportunity or project..." required aria-required="true"></textarea>
+                </div>
+                <button type="submit" class="btn-primary form-submit">
+                    Send Message <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────────── -->
+<footer class="footer" role="contentinfo">
+    <div class="container footer-inner">
+        <span class="footer-logo">AO<span class="logo-dot">.</span></span>
+        <p class="footer-copy">© 2026 Ajila Oluwatosin. All rights reserved.</p>
+        <div class="footer-socials">
+            <a href="https://www.linkedin.com/in/oluwatosin-ajila-65742b1b3/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://github.com/ajilatosin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://x.com/ajloix" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        </div>
+    </div>
 </footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
